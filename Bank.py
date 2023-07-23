@@ -1,3 +1,5 @@
+#JESSE'S BANK
+
 def menu():
     menu = """
 
@@ -46,7 +48,7 @@ def exibir_extrato(saldo, /, *, extrato):
     print('\n================ Extrato ================')
     print('Não foram realizadas movimentações.' if not extrato else extrato)
     print(f'\nSaldo: R$ {saldo:.2f}') 
-    print('=========================================')
+    print('===========================================')
 
 def criar_usuario(usuarios):
     cpf = input('Informe o CPF (somente números): ')
@@ -90,11 +92,11 @@ def listar_contas(contas):
         print(linha)
 
 def main():
-    LIMITE_SAQUE = 3
+    LIMITE_SAQUE = 20
     AGENCIA = '0001'
 
     saldo = 0
-    limite = 500
+    limite = 10000
     extrato = ''
     numero_saques = 0
     usuarios = []
